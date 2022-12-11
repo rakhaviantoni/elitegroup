@@ -75,7 +75,7 @@ export default function Bottom() {
   return (
     <BottomWrapper>
       {Menu.map((menu) => (
-        <NavbarMenu isActive={menu.isActive}>
+        <NavbarMenu key={menu.title} isActive={menu.isActive}>
           <Image src={menu.src} alt={menu.title} width={24} height={24} />
           <span>{menu.title}</span>
         </NavbarMenu>

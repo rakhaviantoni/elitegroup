@@ -62,7 +62,11 @@ export default function Tabs() {
     <TabsWrapper>
       <TabsMenu>
         {tabs.map((menu, i) => (
-          <TabItem isActive={activeTab === i} onClick={() => setActiveTab(i)}>
+          <TabItem
+            key={i}
+            isActive={activeTab === i}
+            onClick={() => setActiveTab(i)}
+          >
             {menu.title}
           </TabItem>
         ))}
