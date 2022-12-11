@@ -12,7 +12,7 @@ import MeetNewMembers from '@src/components/shared/MeetNewMembers'
 import RelatedProfiles from '@src/components/shared/RelatedProfiles'
 
 const Base = styled.div`
-  background-color: ${({ theme }) => theme.color.bodyBackground};
+  background-color: #FAFAFA;
 `
 
 const Wrapper = styled(Container)`
@@ -26,13 +26,11 @@ const Wrapper = styled(Container)`
   }
 `
 
-const Content = styled.div<{ backgroundColor?: string }>`
+const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: ${(props) => props.backgroundColor};
-  border-radius: ${({ theme }) => theme.borderRadius.extraSmall};
   width: 100%;
 
   ${media.tabletLandscape} {
