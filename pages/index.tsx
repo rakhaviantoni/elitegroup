@@ -12,7 +12,7 @@ import MeetNewMembers from '@src/components/shared/MeetNewMembers'
 import RelatedProfiles from '@src/components/shared/RelatedProfiles'
 
 const Base = styled.div`
-  background-color: #FAFAFA;
+  background-color: ${({ theme }) => theme.color.bodyBackground};
 `
 
 const Wrapper = styled(Container)`
