@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   color: #1E1E1E;
 `;
 
-const Rounded = styled.div<{ isOnline: boolean }>`
+const Rounded = styled.div<{ isOnline?: boolean }>`
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -23,7 +23,7 @@ const Rounded = styled.div<{ isOnline: boolean }>`
       : "#E4BC28"};
 `;
 
-export default function Status({ isOnline }: { isOnline: boolean }) {
+export default function Status({ isOnline }: { isOnline?: boolean }) {
   return (
     <Wrapper>
       <Rounded isOnline={isOnline} />

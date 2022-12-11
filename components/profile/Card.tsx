@@ -114,7 +114,7 @@ export default function Card() {
     <Wrapper>
       <TopWrapper>
         <AvatarWrapper>
-          <Avatar src="/image.png" />
+          <Avatar src="/image.png" isOnline />
           <Badge text="Personality" />
         </AvatarWrapper>
         <Description>
